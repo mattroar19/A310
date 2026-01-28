@@ -1,0 +1,57 @@
+# Custom picture file using Lee & Hubbard Ch.1 command format
+# Commands: goto, circle, beginfill, endfill, penup, pendown
+# Draws a simple "robot face" with eyes + mouth.
+
+penup
+goto, -120, -120, 1, black
+pendown
+
+goto, 120, -120, 2, black
+goto, 120, 120, 2, black
+goto, -120, 120, 2, black
+goto, -120, -120, 2, black
+
+
+# left eye
+penup
+goto, -55, 35, 1, black
+pendown
+beginfill, white
+circle, 22, 2, black
+endfill
+penup
+goto, -55, 45, 1, black
+pendown
+beginfill, black
+circle, 7, 1, black
+endfill
+
+# right eye
+penup
+goto, 55, 35, 1, black
+pendown
+beginfill, white
+circle, 22, 2, black
+endfill
+penup
+goto, 55, 45, 1, black
+pendown
+beginfill, black
+circle, 7, 1, black
+endfill
+
+# mouth
+penup
+goto, -70, -40, 1, black
+pendown
+goto, 70, -40, 6, black
+
+# antenna
+penup
+goto, 0, 120, 1, black
+pendown
+goto, 0, 170, 4, black
+
+
+
+penup
